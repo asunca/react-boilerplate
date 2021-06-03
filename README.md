@@ -19,7 +19,7 @@ $ npm install -g @asunca/react-boilerplate
 $ react-boilerplate NAME_OF_YOUR_PROJECT
 running command...
 $ react-boilerplate (-v|--version|version)
-@asunca/react-boilerplate/0.0.0 win32-x64 node-v14.15.4
+@asunca/react-boilerplate/0.0.4 win32-x64 node-v14.15.4
 $ react-boilerplate --help [COMMAND]
 USAGE
   $ react-boilerplate COMMAND

@@ -26,7 +26,7 @@ class ReactBoilerplateCommand extends Command {
     const newProjectFolder = path.join(projectRoot, projectName)
 
     const packageJsonTemplate = await fs.readFile(
-      path.join(projectRoot, '/resources/package.json'),
+      path.join(__dirname, '../resources/package.json'),
       { encoding: 'utf-8' }
     )
     const packageJsonString = ejs.render(packageJsonTemplate, {
@@ -34,7 +34,7 @@ class ReactBoilerplateCommand extends Command {
     })
 
     fs.mkdir(newProjectFolder).then(() => {
-      fs.copy(path.join(projectRoot, '/resources'), newProjectFolder).then(() => {
+      fs.copy(path.join(__dirname, '../resources'), newProjectFolder).then(() => {
         fs.writeFile(path.join(newProjectFolder, '/package.json'), packageJsonString).then(() => {
           console.log('Installing dependencies ...')
           const cmd = /^win/.test(process.platform) ? 'npm.cmd' : 'npm';

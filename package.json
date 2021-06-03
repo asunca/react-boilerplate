@@ -1,7 +1,7 @@
 {
   "name": "@asunca/react-boilerplate",
   "description": "A minimum-source React boilerplate with custom webpack config",
-  "version": "0.0.0",
+  "version": "0.0.4",
   "author": "Sunca, Abdullah",
   "bin": {
     "react-boilerplate": "./bin/run"
@@ -26,7 +26,8 @@
   },
   "files": [
     "/bin",
-    "/src"
+    "/src",
+    "/resources"
   ],
   "homepage": "https://github.com/asunca/react-boilerplate",
   "keywords": [
